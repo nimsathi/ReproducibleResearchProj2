@@ -265,6 +265,6 @@ g
 We see that there was flooding event in mid 2000 that resulted severe property and crop damage  
 
 # Result  
-Our exploration of the NOAA storm database found that:
-1. Tornados has the greatest impact on U.S. population health resulting from fatalities and injuries
-2. Flooding has ths the greatest economic impact resulting from property and crop damage
+Our exploration of the NOAA storm database found that:  
+1. Tornados has the greatest impact on U.S. population health resulting from fatalities and injuries  
+2. Flooding has ths the greatest economic impact resulting from property and crop damage  
