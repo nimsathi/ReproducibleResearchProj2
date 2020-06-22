@@ -2,7 +2,7 @@
 title: "Analysis of U.S. storm event data for impact on population health and economy"
 author: "NS"
 date: "21/06/2020"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -28,6 +28,7 @@ The National Weather Service [Storm Data Documentation](https://d396qusza40orc.c
 Load required libraries
 ```{r libraries, echo=TRUE, message=FALSE, warning=FALSE, cache=TRUE}
 library(R.utils)
+library(dplyr)
 library(lubridate)
 library(stringr)
 library(ggplot2)
@@ -52,14 +53,14 @@ str(data)
 # Data processing  
 ## Cleaning  
 Filter the data for variables that we are interested in   
-* EVTYPE - Event type
-* BGN_DATE - Event start date
-* FATALITIES - number of recorded fatalities
-* INJURIES - number of recorded injuries
-* PROPDMG - property damage (rounded to 3 significant digits)
-* PROPDMGEXP - property damage magnitude
-* CROPDMG - crop damage (rounded to 3 significant digits)
-* CROPDMGEXP - crop damage magnitude
+* EVTYPE - Event type  
+* BGN_DATE - Event start date  
+* FATALITIES - number of recorded fatalities  
+* INJURIES - number of recorded injuries  
+* PROPDMG - property damage (rounded to 3 significant digits)  
+* PROPDMGEXP - property damage magnitude  
+* CROPDMG - crop damage (rounded to 3 significant digits)  
+* CROPDMGEXP - crop damage magnitude  
 
 ```{r filterVariables, echo=TRUE, message=FALSE, warning=FALSE, cache=TRUE}
 data <- data %>%
